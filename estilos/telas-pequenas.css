@@ -69,6 +69,7 @@ header {
 /* ---------- Navegação ---------- */
 nav {
   background-color: var(--azul-escuro);
+  color: var(--branco);
 }
 
 nav ul {
