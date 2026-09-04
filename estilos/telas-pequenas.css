@@ -141,7 +141,7 @@ h1 {
 .foto img {
   display: block;
   width: 100%;
-  max-width: 400px;
+  max-width: 300px;
   height: auto;
   margin: 0 auto;
   border-radius: 6px;
