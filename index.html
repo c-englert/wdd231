@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claudio Englert | WDD 231 — Desenvolvimento Web Frontend I</title>
+    <meta name="description"
+        content="Página inicial de Claudio Englert para o curso WDD 231 da BYU-Idaho, com os cursos do certificado de Programação de Computadores e Web e os projetos do semestre.">
+    <meta name="author" content="Claudio Englert">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+
+    <link rel="stylesheet" href="estilos/normalize.css">
+    <link rel="stylesheet" href="estilos/telas-pequenas.css">
+    <link rel="stylesheet" href="estilos/maior.css">
+
+    <script src="scripts/navegacao.js" defer></script>
+    <script src="scripts/data.js" defer></script>
+    <script src="scripts/curso.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <img src="imagens/logo.svg" alt="" width="48" height="48" class="logo">
+        <span class="nome-site">Claudio Englert</span>
+        <button id="botao-menu" aria-label="Abrir menu de navegação" aria-expanded="false"
+            aria-controls="menu-principal"></button>
+    </header>
+
+    <nav id="menu-principal">
+        <ul>
+            <li><a href="index.html" class="ativo" aria-current="page">Página Inicial</a></li>
+            <li><a href="camara/index.html">Projeto da Câmara</a></li>
+            <li><a href="final/index.html">Projeto Final</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Página Inicial</h1>
+
+        <div class="apresentacao">
+
+            <section class="cartao sobre-mim">
+                <h2>Sobre Mim</h2>
+                <div class="conteudo-cartao">
+                    <p>Sou Claudio Englert, consultor de gestão em Porto Alegre, Rio Grande do Sul, e estudante do
+                        Bacharelado em Desenvolvimento de Software da BYU-Idaho pelo BYU-Pathway.</p>
+                    <p>Trabalho com desenvolvimento de software em projetos que unem gestão estratégica e tecnologia.
+                        No WDD 231 quero aprofundar acessibilidade, desempenho e consumo de APIs no frontend.</p>
+                </div>
+            </section>
+
+            <section class="cartao foto">
+                <h2>Foto</h2>
+                <div class="conteudo-cartao">
+                    <img src="imagens/claudio.webp" alt="Retrato de Claudio Englert" width="400" height="400"
+                        loading="lazy">
+                    <p class="legenda">Porto Alegre, Rio Grande do Sul, Brasil</p>
+                </div>
+            </section>
+
+        </div>
+
+        <section class="cartao cursos">
+            <h2>Cursos de Certificação Web</h2>
+            <div class="conteudo-cartao">
+
+                <div class="filtros">
+                    <button class="filtro ativo" data-assunto="todos">Todos</button>
+                    <button class="filtro" data-assunto="CSE">CSE</button>
+                    <button class="filtro" data-assunto="WDD">WDD</button>
+                </div>
+
+                <div id="lista-cursos" class="lista-cursos"></div>
+
+                <p class="total-creditos">O total de créditos para os cursos listados acima é
+                    <span id="total-creditos"></span>
+                </p>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="redes">
+            <a href="https://www.linkedin.com/in/SEU_LINKEDIN/" aria-label="LinkedIn de Claudio Englert">
+                <img src="imagens/linkedin.svg" alt="" width="32" height="32">
+            </a>
+            <a href="https://github.com/SEU_USUARIO" aria-label="GitHub de Claudio Englert">
+                <img src="imagens/github.svg" alt="" width="32" height="32">
+            </a>
+            <a href="https://x.com/SEU_USUARIO" aria-label="Perfil no X de Claudio Englert">
+                <img src="imagens/x.svg" alt="" width="32" height="32">
+            </a>
+        </div>
+
+        <p>&copy; <span id="anoAtual"></span> &bull; Claudio Englert &bull; Rio Grande do Sul, Brasil</p>
+        <p id="ultimaModificacao"></p>
+    </footer>
+
+</body>
+
+</html>

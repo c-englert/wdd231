@@ -1,0 +1,64 @@
+/* Telas maiores — a partir de 40rem (640px) */
+@media (min-width: 40rem) {
+
+  header {
+    padding: 1rem 2rem;
+  }
+
+  .nome-site {
+    font-size: 1.4rem;
+  }
+
+  #botao-menu {
+    display: none;
+  }
+
+  nav ul {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  nav a {
+    border-bottom: none;
+    padding: 0.85rem 1.5rem;
+  }
+
+  main {
+    padding: 1.5rem 2rem 2rem;
+  }
+
+  h1 {
+    font-size: 2.25rem;
+  }
+
+  .apresentacao {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    align-items: start;
+  }
+
+  .filtros {
+    gap: 1rem;
+  }
+
+  .lista-cursos {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .conteudo-cartao {
+    padding: 1.5rem;
+  }
+}
+
+/* Telas grandes — a partir de 64rem (1024px) */
+@media (min-width: 64rem) {
+
+  .apresentacao {
+    grid-template-columns: 3fr 2fr;
+    gap: 2rem;
+  }
+}
