@@ -27,14 +27,15 @@ async function obterMembros() {
   }
 }
 
-function criarCartao(membro) {
+function criarCartao(membro, indice) {
   const cartao = document.createElement("article");
   cartao.className = "membro";
 
   const imagem = document.createElement("img");
   imagem.setAttribute("src", `imagens/membros/${membro.imagem}`);
   imagem.setAttribute("alt", `Marca da empresa ${membro.nome}`);
-  imagem.setAttribute("loading", "lazy");
+  imagem.setAttribute("loading", indice < 2 ? "eager" : "lazy");
+  if (indice < 2) imagem.setAttribute("fetchpriority", "high");
   imagem.setAttribute("width", "400");
   imagem.setAttribute("height", "300");
 
@@ -101,7 +102,7 @@ function criarCartao(membro) {
 }
 
 function exibirMembros(membros) {
-  membros.forEach((membro) => secaoMembros.appendChild(criarCartao(membro)));
+  membros.forEach((membro, indice) => secaoMembros.appendChild(criarCartao(membro, indice)));
 }
 
 function definirVisualizacao(modo) {
