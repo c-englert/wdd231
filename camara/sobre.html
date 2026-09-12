@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre | Câmara de Comércio de Porto Alegre</title>
+    <meta name="description" content="História, dados demográficos e galeria de imagens de Porto Alegre para quem quer conhecer a cidade.">
+    <meta name="author" content="Claudio Englert">
+    <link rel="icon" href="favicon.ico">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Sobre | Câmara de Comércio de Porto Alegre">
+    <meta property="og:description" content="História, dados demográficos e galeria de imagens de Porto Alegre para quem quer conhecer a cidade.">
+    <meta property="og:image" content="https://c-englert.github.io/wdd231/camara/imagens/og-image.png">
+    <meta property="og:url" content="https://c-englert.github.io/wdd231/camara/sobre.html">
+    <meta property="og:locale" content="pt_BR">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Source+Sans+3:wght@400;600&display=swap">
+
+    <link rel="stylesheet" href="estilos/normalize.css">
+    <link rel="stylesheet" href="estilos/telas-pequenas.css">
+    <link rel="stylesheet" href="estilos/maior.css">
+
+    <script src="scripts/navegacao.js" defer></script>
+    <script src="scripts/data.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <img src="imagens/logo.svg" alt="" width="48" height="48" class="logo">
+        <span class="nome-site">Câmara de Comércio de Porto Alegre</span>
+        <button id="botao-menu" aria-label="Abrir menu de navegação" aria-expanded="false"
+            aria-controls="menu-principal"></button>
+    </header>
+
+    <nav id="menu-principal" aria-label="Navegação principal">
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="diretorio.html">Diretório</a></li>
+            <li><a href="associe.html">Associe-se</a></li>
+            <li><a href="sobre.html" class="ativo" aria-current="page">Sobre</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Sobre Porto Alegre</h1>
+        <p class="chamada">Esta página trará a história da cidade, dados demográficos atuais e uma galeria de imagens da região.</p>
+        <p><a href="diretorio.html">Enquanto isso, conheça as empresas associadas no diretório.</a></p>
+    </main>
+
+    <footer>
+        <div class="rodape-conteudo">
+
+            <div class="contato-camara">
+                <h2>Câmara de Comércio de Porto Alegre</h2>
+                <p>Rua dos Andradas, 1001</p>
+                <p>Centro Histórico &bull; Porto Alegre/RS</p>
+                <p>CEP 90020-007</p>
+                <p><a href="mailto:contato@camarapoa.com.br">contato@camarapoa.com.br</a></p>
+                <p><a href="tel:+555132001996">(51) 3200-1996</a></p>
+            </div>
+
+            <div class="redes">
+                <a href="https://www.linkedin.com/company/camarapoa"
+                    aria-label="LinkedIn da Câmara de Comércio de Porto Alegre">
+                    <img src="imagens/linkedin.svg" alt="" width="32" height="32">
+                </a>
+                <a href="https://www.instagram.com/camarapoa"
+                    aria-label="Instagram da Câmara de Comércio de Porto Alegre">
+                    <img src="imagens/instagram.svg" alt="" width="32" height="32">
+                </a>
+                <a href="mailto:contato@camarapoa.com.br"
+                    aria-label="Enviar e-mail para a Câmara de Comércio de Porto Alegre">
+                    <img src="imagens/email.svg" alt="" width="32" height="32">
+                </a>
+            </div>
+
+            <div class="creditos">
+                <p>Projeto de Aula WDD 231</p>
+                <p>Claudio Englert</p>
+                <p>&copy; <span id="anoAtual"></span> Câmara de Comércio de Porto Alegre</p>
+                <p id="ultimaModificacao"></p>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>

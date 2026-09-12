@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-label="Marca da Câmara de Comércio de Porto Alegre">
+  <rect width="48" height="48" rx="8" fill="#1B4965"/>
+  <path d="M8 20 L24 9 L40 20 Z" fill="#FF8C42"/>
+  <rect x="11" y="22" width="5" height="14" fill="#FFFFFF"/>
+  <rect x="21.5" y="22" width="5" height="14" fill="#FFFFFF"/>
+  <rect x="32" y="22" width="5" height="14" fill="#FFFFFF"/>
+  <rect x="8" y="38" width="32" height="4" rx="1.5" fill="#FFFFFF"/>
+</svg>

@@ -1,0 +1,38 @@
+{
+  "ala": "Ala Menino Deus",
+  "estaca": "Estaca Porto Alegre Norte",
+  "atualizadoEm": "2026-09-07",
+  "familias": [
+    {
+      "sobrenome": "Machado",
+      "dataMudanca": "2026-03-14",
+      "numeroDeRegistros": 4,
+      "visitaDoBispado": true,
+      "membros": [
+        { "nome": "Rafael Machado", "genero": "masculino", "dataNascimento": "1985-07-22" },
+        { "nome": "Luciana Machado", "genero": "feminino", "dataNascimento": "1987-11-03" },
+        { "nome": "Pedro Machado", "genero": "masculino", "dataNascimento": "2013-02-19" },
+        { "nome": "Helena Machado", "genero": "feminino", "dataNascimento": "2016-09-30" }
+      ]
+    },
+    {
+      "sobrenome": "Bertoldo",
+      "dataMudanca": "2026-06-01",
+      "numeroDeRegistros": 2,
+      "visitaDoBispado": false,
+      "membros": [
+        { "nome": "Marcos Bertoldo", "genero": "masculino", "dataNascimento": "1992-04-08" },
+        { "nome": "Ana Bertoldo", "genero": "feminino", "dataNascimento": "1994-12-27" }
+      ]
+    },
+    {
+      "sobrenome": "Kruger",
+      "dataMudanca": "2026-08-23",
+      "numeroDeRegistros": 1,
+      "visitaDoBispado": false,
+      "membros": [
+        { "nome": "Beatriz Kruger", "genero": "feminino", "dataNascimento": "2001-05-16" }
+      ]
+    }
+  ]
+}

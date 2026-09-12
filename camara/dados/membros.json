@@ -1,0 +1,109 @@
+{
+  "atualizadoEm": "2026-09-12",
+  "membros": [
+    {
+      "nome": "Padaria Cais do Porto",
+      "slogan": "Pão de verdade, todo dia, desde 1998.",
+      "endereco": "Rua dos Andradas, 1234 — Centro Histórico, Porto Alegre/RS",
+      "telefone": "(51) 3226-1180",
+      "email": "contato@padariacaisdoporto.com.br",
+      "site": "https://www.padariacaisdoporto.com.br",
+      "imagem": "padaria-cais-do-porto.webp",
+      "nivel": 3,
+      "setor": "Panificação",
+      "desde": 1998,
+      "descricao": "Pães de fermentação natural e cafés da manhã para o comércio do Centro."
+    },
+    {
+      "nome": "Quarto Distrito Software",
+      "slogan": "Software feito no coração do 4º Distrito.",
+      "endereco": "Rua Voluntários da Pátria, 1980 — Floresta, Porto Alegre/RS",
+      "telefone": "(51) 3025-7719",
+      "email": "contato@4dsoftware.com.br",
+      "site": "https://www.4dsoftware.com.br",
+      "imagem": "quarto-distrito-software.webp",
+      "nivel": 3,
+      "setor": "Tecnologia",
+      "desde": 2014,
+      "descricao": "Desenvolvimento sob medida para indústria e varejo da Região Metropolitana."
+    },
+    {
+      "nome": "Erva-Mate Guaíba",
+      "slogan": "O chimarrão do Rio Grande começa aqui.",
+      "endereco": "Avenida Diário de Notícias, 400 — Cristal, Porto Alegre/RS",
+      "telefone": "(51) 3242-6600",
+      "email": "vendas@ervamateguaiba.com.br",
+      "site": "https://www.ervamateguaiba.com.br",
+      "imagem": "erva-mate-guaiba.webp",
+      "nivel": 2,
+      "setor": "Alimentos",
+      "desde": 1987,
+      "descricao": "Moagem e envase de erva-mate para chimarrão, com distribuição em todo o estado."
+    },
+    {
+      "nome": "Ateliê Bica de Pedra",
+      "slogan": "Madeira com origem, móveis com história.",
+      "endereco": "Rua Gonçalo de Carvalho, 210 — Independência, Porto Alegre/RS",
+      "telefone": "(51) 3311-4507",
+      "email": "atelie@bicadepedra.com.br",
+      "site": "https://www.bicadepedra.com.br",
+      "imagem": "atelie-bica-de-pedra.webp",
+      "nivel": 2,
+      "setor": "Marcenaria e design",
+      "desde": 2011,
+      "descricao": "Mobiliário sob medida em madeira de reflorestamento para escritórios e cafés."
+    },
+    {
+      "nome": "Livraria Praça da Alfândega",
+      "slogan": "Autores gaúchos em primeiro plano.",
+      "endereco": "Rua Sete de Setembro, 1020 — Centro Histórico, Porto Alegre/RS",
+      "telefone": "(51) 3224-8815",
+      "email": "contato@livrariaalfandega.com.br",
+      "site": "https://www.livrariaalfandega.com.br",
+      "imagem": "livraria-praca-da-alfandega.webp",
+      "nivel": 2,
+      "setor": "Varejo",
+      "desde": 2004,
+      "descricao": "Livraria independente com curadoria de autores gaúchos e programação de lançamentos."
+    },
+    {
+      "nome": "Tecelagem Menino Deus",
+      "slogan": "Algodão em pequenas tiragens.",
+      "endereco": "Avenida Getúlio Vargas, 887 — Menino Deus, Porto Alegre/RS",
+      "telefone": "(51) 3233-9042",
+      "email": "contato@tecelagemmeninodeus.com.br",
+      "site": "https://www.tecelagemmeninodeus.com.br",
+      "imagem": "tecelagem-menino-deus.webp",
+      "nivel": 1,
+      "setor": "Têxtil",
+      "desde": 2016,
+      "descricao": "Enxoval e uniformes em algodão, produzidos em pequenas tiragens."
+    },
+    {
+      "nome": "Oficina Moinhos Bike",
+      "slogan": "Sua equipe pedalando para o trabalho.",
+      "endereco": "Rua Padre Chagas, 315 — Moinhos de Vento, Porto Alegre/RS",
+      "telefone": "(51) 3346-2280",
+      "email": "oficina@moinhosbike.com.br",
+      "site": "https://www.moinhosbike.com.br",
+      "imagem": "oficina-moinhos-bike.webp",
+      "nivel": 1,
+      "setor": "Serviços",
+      "desde": 2019,
+      "descricao": "Manutenção de bicicletas e assessoria para deslocamento urbano de equipes."
+    },
+    {
+      "nome": "Contabilidade Pampa",
+      "slogan": "Trinta anos abrindo empresas na capital.",
+      "endereco": "Avenida Ipiranga, 5200 — Partenon, Porto Alegre/RS",
+      "telefone": "(51) 3320-3500",
+      "email": "contato@contabilidadepampa.com.br",
+      "site": "https://www.contabilidadepampa.com.br",
+      "imagem": "contabilidade-pampa.webp",
+      "nivel": 1,
+      "setor": "Serviços",
+      "desde": 1996,
+      "descricao": "Contabilidade e abertura de empresas para pequenos negócios da capital."
+    }
+  ]
+}

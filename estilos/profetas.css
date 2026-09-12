@@ -1,0 +1,86 @@
+:root {
+    --cor-primaria: #2C3E50;
+    --cor-destaque: #C9A227;
+    --cor-fundo: #F4F1EA;
+    --cor-cartao: #FFFFFF;
+    --cor-texto: #2B2B2B;
+    --fonte-titulo: "Merriweather", Georgia, serif;
+    --fonte-corpo: "Roboto", Arial, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--fonte-corpo);
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+}
+
+header {
+    background-color: var(--cor-primaria);
+    border-bottom: 5px solid var(--cor-destaque);
+    padding: 1.5rem 1rem;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-family: var(--fonte-titulo);
+    font-size: clamp(1.5rem, 4vw, 2.25rem);
+    color: #FFFFFF;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+/* auto-fit: o número de colunas se ajusta à largura da tela, sem media queries */
+#cartoes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+    gap: 1.5rem;
+}
+
+#cartoes section {
+    background-color: var(--cor-cartao);
+    border-top: 4px solid var(--cor-primaria);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 1.25rem;
+    text-align: center;
+}
+
+#cartoes h2 {
+    margin: 0 0 0.75rem;
+    font-family: var(--fonte-titulo);
+    font-size: 1.3rem;
+    color: var(--cor-primaria);
+}
+
+#cartoes p {
+    margin: 0.25rem 0;
+    font-size: 0.95rem;
+}
+
+#cartoes img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 1rem auto 0;
+    border-radius: 4px;
+}
+
+footer {
+    background-color: var(--cor-primaria);
+    color: #FFFFFF;
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+}

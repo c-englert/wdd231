@@ -1,0 +1,384 @@
+/* ---------- Câmara de Comércio de Porto Alegre — telas pequenas (mobile first) ---------- */
+
+/* ---------- Variáveis ---------- */
+:root {
+  --azul: #1b4965;
+  --azul-claro: #2c6e96;
+  --azul-fraco: #e4edf3;
+  --laranja: #ff8c42;
+  --laranja-texto: #a8480a;
+  --laranja-fraco: #fff1e6;
+  --fundo: #f7f9fb;
+  --branco: #ffffff;
+  --borda: #dce4ea;
+  --texto: #16232b;
+  --texto-suave: #4c5c67;
+  --sombra: 0 1px 3px rgba(27, 73, 101, 0.16);
+  --titulo: "Poppins", "Trebuchet MS", Arial, sans-serif;
+  --corpo: "Source Sans 3", "Segoe UI", Arial, Helvetica, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--corpo);
+  color: var(--texto);
+  background-color: var(--fundo);
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--titulo);
+  line-height: 1.25;
+}
+
+a {
+  color: var(--azul);
+}
+
+:focus-visible {
+  outline: 3px solid var(--laranja-texto);
+  outline-offset: 2px;
+}
+
+.visualmente-oculto {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ---------- Cabeçalho ---------- */
+header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  background-color: var(--branco);
+  border-bottom: 4px solid var(--laranja);
+}
+
+.logo {
+  width: 44px;
+  height: 44px;
+}
+
+.nome-site {
+  flex: 1;
+  font-family: var(--titulo);
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--azul);
+}
+
+#botao-menu {
+  border: 2px solid var(--azul);
+  border-radius: 4px;
+  background-color: var(--branco);
+  color: var(--azul);
+  font-size: 1.5rem;
+  line-height: 1;
+  padding: 0.2rem 0.6rem;
+  cursor: pointer;
+}
+
+#botao-menu::before {
+  content: "\2630";
+}
+
+#botao-menu.aberto::before {
+  content: "\2715";
+}
+
+/* ---------- Navegação ---------- */
+nav {
+  background-color: var(--azul);
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+
+nav.aberto ul {
+  display: block;
+}
+
+nav a {
+  display: block;
+  padding: 0.85rem 1rem;
+  color: var(--branco);
+  font-family: var(--titulo);
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: var(--azul-claro);
+}
+
+nav a.ativo {
+  background-color: var(--laranja);
+  color: var(--texto);
+  font-weight: 600;
+}
+
+/* ---------- Conteúdo principal ---------- */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 1.65rem;
+  margin: 0.5rem 0 0.25rem;
+  color: var(--azul);
+}
+
+.chamada {
+  margin: 0 0 1.25rem;
+  max-width: 60ch;
+  color: var(--texto-suave);
+}
+
+/* ---------- Controles de visualização ---------- */
+.controles {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--borda);
+}
+
+.controles p {
+  flex: 1;
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--texto-suave);
+}
+
+.botao-visual {
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--azul);
+  border-radius: 4px;
+  background-color: var(--branco);
+  color: var(--azul);
+  font-family: var(--titulo);
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.botao-visual:hover {
+  background-color: var(--azul-fraco);
+}
+
+.botao-visual.ativo {
+  background-color: var(--laranja);
+  border-color: var(--laranja-texto);
+  color: var(--texto);
+}
+
+/* ---------- Lista de membros ---------- */
+.membros {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.membro {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  background-color: var(--branco);
+  border: 1px solid var(--borda);
+  border-radius: 8px;
+  box-shadow: var(--sombra);
+  overflow: hidden;
+}
+
+.membro img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  background-color: var(--azul-fraco);
+}
+
+.dados {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.membro h2 {
+  margin: 0 0 0.15rem;
+  font-size: 1.15rem;
+  color: var(--azul);
+}
+
+.slogan {
+  margin: 0 0 0.35rem;
+  font-style: italic;
+  color: var(--texto-suave);
+}
+
+.setor {
+  margin: 0 0 0.6rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--texto-suave);
+}
+
+.membro p {
+  margin: 0 0 0.4rem;
+}
+
+.descricao {
+  color: var(--texto-suave);
+}
+
+.contato {
+  font-size: 0.88rem;
+  line-height: 1.75;
+}
+
+.membro a {
+  overflow-wrap: anywhere;
+}
+
+.selo {
+  display: inline-block;
+  margin-top: auto;
+  padding-top: 0.75rem;
+  align-self: flex-start;
+  border-radius: 999px;
+  font-family: var(--titulo);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.selo-1 {
+  background-color: var(--azul-fraco);
+  color: var(--azul);
+}
+
+.selo-2 {
+  background-color: var(--borda);
+  color: var(--texto);
+}
+
+.selo-3 {
+  background-color: var(--laranja);
+  color: var(--texto);
+}
+
+.erro {
+  padding: 1rem;
+  border-left: 6px solid var(--laranja-texto);
+  background-color: var(--laranja-fraco);
+  color: var(--texto);
+}
+
+/* ---------- Visualização em lista (sem imagens) ---------- */
+.membros.lista .membro img {
+  display: none;
+}
+
+.membros.lista {
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+}
+
+.membros.lista .membro {
+  border-left: 6px solid var(--azul);
+}
+
+.membros.lista .dados {
+  padding: 0.75rem 1rem;
+}
+
+.membros.lista .descricao,
+.membros.lista .slogan {
+  display: none;
+}
+
+.membros.lista .membro h2 {
+  font-size: 1.05rem;
+}
+
+/* ---------- Rodapé ---------- */
+footer {
+  padding: 1.5rem 1rem;
+  background-color: var(--azul);
+  color: var(--branco);
+  text-align: center;
+}
+
+.rodape-conteudo {
+  display: grid;
+  gap: 1.25rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.05rem;
+}
+
+footer a {
+  color: var(--branco);
+}
+
+footer p {
+  margin: 0.25rem 0;
+  font-size: 0.92rem;
+}
+
+.redes {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+}
+
+.redes img {
+  display: block;
+  width: 32px;
+  height: 32px;
+}
+
+.creditos {
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
