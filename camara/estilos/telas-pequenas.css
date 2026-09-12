@@ -6,6 +6,7 @@
   --azul-claro: #2c6e96;
   --azul-fraco: #e4edf3;
   --laranja: #ff8c42;
+  --prata: #c7d2da;
   --laranja-texto: #a8480a;
   --laranja-fraco: #fff1e6;
   --fundo: #f7f9fb;
@@ -268,10 +269,10 @@ h1 {
   overflow-wrap: anywhere;
 }
 
-.selo {
+.membro .selo {
   display: inline-block;
   margin-top: auto;
-  padding-top: 0.75rem;
+  padding: 0.2rem 0.7rem;
   align-self: flex-start;
   border-radius: 999px;
   font-family: var(--titulo);
@@ -279,18 +280,23 @@ h1 {
   font-weight: 600;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+  border: 1px solid transparent;
 }
 
+/* Nível 1 — Membro: só contorno */
 .selo-1 {
-  background-color: var(--azul-fraco);
-  color: var(--azul);
+  background-color: transparent;
+  border-color: var(--borda);
+  color: var(--texto-suave);
 }
 
+/* Nível 2 — Prata: preenchimento cinza-metal */
 .selo-2 {
-  background-color: var(--borda);
+  background-color: var(--prata);
   color: var(--texto);
 }
 
+/* Nível 3 — Ouro: preenchimento laranja */
 .selo-3 {
   background-color: var(--laranja);
   color: var(--texto);
