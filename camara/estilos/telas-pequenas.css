@@ -135,8 +135,8 @@ nav a:focus {
 }
 
 nav a.ativo {
-  background-color: var(--laranja);
-  color: var(--texto);
+  background-color: var(--laranja-texto);
+  color: var(--branco);
   font-weight: 600;
 }
 
