@@ -224,7 +224,8 @@ h1 {
   flex-direction: column;
 }
 
-.membro h2 {
+.membro h2,
+.membro h3 {
   margin: 0 0 0.15rem;
   font-size: 1.15rem;
   color: var(--azul);
@@ -326,6 +327,175 @@ h1 {
 
 .membros.lista .membro h2 {
   font-size: 1.05rem;
+}
+
+/* ===== Página inicial ===== */
+
+.hero {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.hero-imagem {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.hero-conteudo h1 {
+  margin-top: 1rem;
+}
+
+.hero-conteudo p {
+  margin: 0;
+  color: var(--texto-suave);
+}
+
+.botao-cta {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.6rem 1.2rem;
+  border: 2px solid var(--laranja-texto);
+  border-radius: 999px;
+  background-color: var(--laranja);
+  color: var(--texto);
+  font-family: var(--titulo);
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(22, 35, 43, 0.35);
+}
+
+.botao-cta:hover,
+.botao-cta:focus {
+  background-color: var(--branco);
+}
+
+.credito-foto {
+  margin: 0.25rem 0 0;
+  font-size: 0.78rem;
+  color: var(--texto-suave);
+  text-align: right;
+}
+
+.grade-inicio {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.cartao {
+  padding: 1rem 1.25rem;
+  background-color: var(--branco);
+  border: 1px solid var(--borda);
+  border-top: 4px solid var(--azul);
+  border-radius: 8px;
+  box-shadow: var(--sombra);
+}
+
+.cartao h2,
+.destaques h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.25rem;
+  color: var(--azul);
+}
+
+.lista-eventos {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.lista-eventos li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--borda);
+}
+
+.lista-eventos li:last-child {
+  border-bottom: none;
+}
+
+.lista-eventos p {
+  margin: 0;
+}
+
+.evento-data {
+  min-width: 4.5rem;
+  padding: 0.25rem 0.5rem;
+  white-space: nowrap;
+  border-radius: 4px;
+  background-color: var(--laranja-fraco);
+  color: var(--laranja-texto);
+  font-family: var(--titulo);
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.clima-atual {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0 0.75rem;
+}
+
+.clima-atual p {
+  margin: 0;
+  font-family: var(--titulo);
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--azul);
+}
+
+.clima-atual .clima-descricao {
+  flex-basis: 100%;
+  font-family: var(--corpo);
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--texto-suave);
+}
+
+.clima-atual .clima-descricao::first-letter {
+  text-transform: uppercase;
+}
+
+.clima h3 {
+  margin: 1rem 0 0.5rem;
+  font-size: 1rem;
+  color: var(--azul);
+}
+
+.clima-previsao {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.clima-previsao li {
+  padding: 0.5rem;
+  border-radius: 4px;
+  background-color: var(--azul-fraco);
+  text-align: center;
+}
+
+.previsao-dia {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--texto-suave);
+  text-transform: capitalize;
+}
+
+.grade-destaques {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 2rem;
 }
 
 footer {

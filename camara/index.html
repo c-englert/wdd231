@@ -27,6 +27,8 @@
 
     <script src="scripts/navegacao.js" defer></script>
     <script src="scripts/data.js" defer></script>
+    <script src="scripts/clima.js" defer></script>
+    <script src="scripts/destaques.js" defer></script>
 </head>
 
 <body>
@@ -48,9 +50,59 @@
     </nav>
 
     <main>
-        <h1>Início</h1>
-        <p class="chamada">Esta página será publicada na Semana 3, com destaques da comunidade, previsão do tempo e empresas associadas.</p>
-        <p><a href="diretorio.html">Enquanto isso, conheça as empresas associadas no diretório.</a></p>
+        <section class="hero">
+            <img src="imagens/hero-porto-alegre.webp"
+                srcset="imagens/hero-porto-alegre-600.webp 600w, imagens/hero-porto-alegre.webp 1200w"
+                sizes="100vw"
+                alt="Pôr do sol sobre o Guaíba, com um barco de pescadores na água" width="1200" height="800"
+                class="hero-imagem" fetchpriority="high">
+            <p class="credito-foto">Foto: Helena Rocha/<a
+                    href="https://bancodeimagens.portoalegre.rs.gov.br/imagem/7510" rel="noopener">PMPA</a></p>
+
+            <div class="hero-conteudo">
+                <h1>Negócios que movem Porto Alegre</h1>
+                <p>Conecte sua empresa a quem faz a economia da cidade acontecer.</p>
+                <a href="associe.html" class="botao-cta">Associe-se agora</a>
+            </div>
+        </section>
+
+        <div class="grade-inicio">
+
+            <section class="cartao eventos" aria-labelledby="titulo-eventos">
+                <h2 id="titulo-eventos">Próximos Eventos</h2>
+                <ul class="lista-eventos">
+                    <li>
+                        <p class="evento-data">08 out</p>
+                        <p class="evento-nome">Café de Negócios no Mercado Público</p>
+                    </li>
+                    <li>
+                        <p class="evento-data">22 out</p>
+                        <p class="evento-nome">Oficina: Vendas pelo Instagram</p>
+                    </li>
+                    <li>
+                        <p class="evento-data">05 nov</p>
+                        <p class="evento-nome">Rodada de Networking no 4º Distrito</p>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="cartao clima" aria-labelledby="titulo-clima">
+                <h2 id="titulo-clima">Tempo Agora</h2>
+                <div class="clima-atual">
+                    <img id="clima-icone" src="" alt="" width="80" height="80" hidden>
+                    <p><span id="clima-temperatura">--</span> °C</p>
+                    <p id="clima-descricao" class="clima-descricao">Carregando…</p>
+                </div>
+                <h3>Previsão</h3>
+                <ul id="clima-previsao" class="clima-previsao"></ul>
+            </section>
+
+        </div>
+
+        <section class="destaques" aria-labelledby="titulo-destaques">
+            <h2 id="titulo-destaques">Empresas em Destaque</h2>
+            <div id="destaques" class="grade-destaques"></div>
+        </section>
     </main>
 
     <footer>
