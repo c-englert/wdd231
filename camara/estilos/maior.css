@@ -32,7 +32,9 @@
     font-size: 2.1rem;
   }
 
-  .membros.grade {
+  .membros.grade,
+  .grade-inicio,
+  .grade-destaques {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.25rem;
   }
@@ -86,16 +88,6 @@
     border-top: none;
     text-align: right;
   }
-}
-
-@media (min-width: 64rem) {
-
-  .membros.grade {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-@media (min-width: 40rem) {
 
   .hero-conteudo {
     position: absolute;
@@ -106,11 +98,6 @@
     border-radius: 8px;
     background-color: var(--painel);
     color: var(--branco);
-  }
-
-  .hero-conteudo h1,
-  .hero-conteudo p {
-    color: inherit;
   }
 
   .hero-conteudo h1 {
@@ -132,8 +119,10 @@
     color: var(--branco);
   }
 
-  .credito-foto a {
-    color: var(--branco);
+  .credito-foto a,
+  .hero-conteudo h1,
+  .hero-conteudo p {
+    color: inherit;
   }
 
   .botao-cta {
@@ -141,14 +130,13 @@
     display: inline-block;
   }
 
-  .grade-inicio,
-  .grade-destaques {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.25rem;
-  }
 }
 
 @media (min-width: 64rem) {
+
+  .membros.grade {
+    grid-template-columns: repeat(4, 1fr);
+  }
 
   .hero-conteudo h1 {
     font-size: 2.6rem;
