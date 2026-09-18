@@ -72,15 +72,23 @@ header {
   color: var(--azul);
 }
 
-#botao-menu {
+/* Aparência comum dos botões */
+#botao-menu,
+.botao-visual,
+.botao-cta {
   border: 2px solid var(--azul);
   border-radius: 4px;
   background-color: var(--branco);
   color: var(--azul);
+  font-family: var(--titulo);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#botao-menu {
+  padding: 0.2rem 0.6rem;
   font-size: 1.5rem;
   line-height: 1;
-  padding: 0.2rem 0.6rem;
-  cursor: pointer;
 }
 
 #botao-menu::before {
@@ -170,14 +178,7 @@ h1 {
 
 .botao-visual {
   padding: 0.5rem 1rem;
-  border: 2px solid var(--azul);
-  border-radius: 4px;
-  background-color: var(--branco);
-  color: var(--azul);
-  font-family: var(--titulo);
   font-size: 0.95rem;
-  font-weight: 600;
-  cursor: pointer;
 }
 
 .botao-visual:hover {
@@ -366,12 +367,10 @@ h1 {
   top: 1rem;
   right: 1rem;
   padding: 0.6rem 1.2rem;
-  border: 2px solid var(--laranja-texto);
+  border-color: var(--laranja-texto);
   border-radius: 999px;
   background-color: var(--laranja);
   color: var(--texto);
-  font-family: var(--titulo);
-  font-weight: 600;
   text-decoration: none;
   box-shadow: var(--sombra-flutuante);
 }
