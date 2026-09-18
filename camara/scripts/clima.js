@@ -9,7 +9,6 @@ const urlPrevisao = `https://api.openweathermap.org/data/2.5/forecast?${PARAMETR
 
 const temperatura = document.querySelector("#clima-temperatura");
 const descricao = document.querySelector("#clima-descricao");
-const icone = document.querySelector("#clima-icone");
 const listaPrevisao = document.querySelector("#clima-previsao");
 
 async function buscarJson(url) {
@@ -24,9 +23,14 @@ function exibirClimaAtual(dados) {
   const tempo = dados.weather[0];
   temperatura.textContent = Math.round(dados.main.temp);
   descricao.textContent = tempo.description;
+
+  const icone = document.createElement("img");
   icone.src = `https://openweathermap.org/img/wn/${tempo.icon}@2x.png`;
   icone.alt = tempo.description;
-  icone.hidden = false;
+  icone.width = 80;
+  icone.height = 80;
+  icone.className = "clima-icone";
+  temperatura.closest(".clima-atual").prepend(icone);
 }
 
 // Converte o horário UTC da API para a data local da cidade (AAAA-MM-DD)
