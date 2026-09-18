@@ -1,6 +1,7 @@
 :root {
   --azul: #1b4965;
   --azul-fraco: #e4edf3;
+  --azul-claro: #2c6e96;
   --laranja: #ff8c42;
   --prata: #c7d2da;
   --laranja-texto: #a8480a;
@@ -12,6 +13,7 @@
   --texto-suave: #4c5c67;
   --painel: #16232bcc;
   --linha-clara: #ffffff26;
+  --linha-clara-forte: #ffffff40;
   --sombra: 0 1px 3px #1b496529;
   --sombra-flutuante: 0 2px 8px #16232b59;
   --titulo: "Poppins", "Trebuchet MS", Arial, sans-serif;
@@ -54,11 +56,6 @@ header {
   padding: 0.75rem 1rem;
   background-color: var(--branco);
   border-bottom: 4px solid var(--laranja);
-}
-
-.logo {
-  width: 44px;
-  height: 44px;
 }
 
 .nome-site {
@@ -130,7 +127,7 @@ nav a {
 
 nav a:hover,
 nav a:focus {
-  background-color: #2c6e96;
+  background-color: var(--azul-claro);
 }
 
 nav a.ativo {
@@ -529,7 +526,7 @@ footer p {
 
 .creditos {
   padding-top: 1.25rem;
-  border-top: 1px solid #ffffff40;
+  border-top: 1px solid var(--linha-clara-forte);
 }
 
 @media (prefers-reduced-motion: reduce) {
