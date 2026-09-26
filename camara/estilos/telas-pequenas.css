@@ -622,6 +622,7 @@ footer p {
   border-radius: 8px;
   background-color: var(--branco);
   box-shadow: var(--sombra);
+  animation: surgir 0.6s ease-out both;
 }
 
 .cartao-nivel h3 {
@@ -719,10 +720,6 @@ footer p {
     opacity: 1;
     transform: translateY(0);
   }
-}
-
-.cartao-nivel {
-  animation: surgir 0.6s ease-out both;
 }
 
 .cartao-nivel:nth-of-type(2) {
