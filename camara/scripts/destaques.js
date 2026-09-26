@@ -1,17 +1,15 @@
-// Empresas em destaque: 3 membros Ouro ou Prata sorteados a cada carregamento
+// Empresas em destaque
 const urlMembros = "dados/membros.json";
 const areaDestaques = document.querySelector("#destaques");
 const QUANTIDADE = 3;
 
 const nomesDeNivel = { 2: "Prata", 3: "Ouro" };
 
-// "(51) 3226-1180" -> "+555132261180"
 const paraLinkDeTelefone = (telefone) => `+55${telefone.replace(/\D/g, "")}`;
 
-// "https://www.exemplo.com.br" -> "exemplo.com.br"
 const paraTextoDeSite = (site) => site.replace(/^https?:\/\/(www\.)?/, "");
 
-// Embaralhamento de Fisher-Yates: cada ordem tem a mesma chance
+// Embaralhamento de Fisher-Yates
 function embaralhar(lista) {
   const copia = [...lista];
   for (let i = copia.length - 1; i > 0; i--) {

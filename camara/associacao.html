@@ -13,7 +13,7 @@
     <meta property="og:title" content="Associe-se | Câmara de Comércio de Porto Alegre">
     <meta property="og:description" content="Benefícios de cada nível de associação e formulário de inscrição na Câmara de Comércio de Porto Alegre.">
     <meta property="og:image" content="https://c-englert.github.io/wdd231/camara/imagens/og-image.png">
-    <meta property="og:url" content="https://c-englert.github.io/wdd231/camara/associe.html">
+    <meta property="og:url" content="https://c-englert.github.io/wdd231/camara/associacao.html">
     <meta property="og:locale" content="pt_BR">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,6 +27,7 @@
 
     <script src="scripts/navegacao.js" defer></script>
     <script src="scripts/data.js" defer></script>
+    <script src="scripts/associacao.js" defer></script>
 </head>
 
 <body>
@@ -42,15 +43,148 @@
         <ul>
             <li><a href="index.html">Início</a></li>
             <li><a href="diretorio.html">Diretório</a></li>
-            <li><a href="associe.html" class="ativo" aria-current="page">Associe-se</a></li>
+            <li><a href="associacao.html" class="ativo" aria-current="page">Associe-se</a></li>
             <li><a href="sobre.html">Sobre</a></li>
         </ul>
     </nav>
 
     <main>
         <h1>Associe-se à câmara</h1>
-        <p class="chamada">Esta página trará os benefícios de cada nível de associação e o formulário de inscrição.</p>
-        <p><a href="diretorio.html">Enquanto isso, conheça as empresas associadas no diretório.</a></p>
+        <p class="chamada">Preencha o pedido de associação que entraremos em contato em até dois dias úteis.</p>
+
+        <div class="layout-associacao">
+
+            <form class="form-associacao" action="agradecimento.html" method="get">
+
+                <fieldset>
+                    <legend>Seus dados</legend>
+
+                    <label>Nome *
+                        <input type="text" name="nome" title="Seu primeiro nome" autocomplete="given-name" required>
+                    </label>
+
+                    <label>Sobrenome *
+                        <input type="text" name="sobrenome" title="Seu sobrenome" autocomplete="family-name" required>
+                    </label>
+
+                    <label>Cargo na organização
+                        <input type="text" name="cargo" title="Apenas letras, hifens e espaços, com no mínimo 7 caracteres"
+                            autocomplete="organization-title" pattern="[A-Za-zÀ-ÿ \-]{7,}">
+                    </label>
+
+                    <label>E-mail *
+                        <input type="email" name="email" title="Seu e-mail de contato" autocomplete="email"
+                            placeholder="nome@empresa.com.br" required>
+                    </label>
+
+                    <label>Celular *
+                        <input type="tel" name="celular" title="Seu número de celular com DDD" autocomplete="tel" required>
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Sua organização</legend>
+
+                    <label>Nome da empresa/organização *
+                        <input type="text" name="organizacao" title="Nome da empresa ou organização"
+                            autocomplete="organization" required>
+                    </label>
+
+                    <label>Nível de associação *
+                        <select name="nivel" title="Escolha o nível de associação" required>
+                            <option value="" disabled selected>Escolha um nível</option>
+                            <option value="np">Associação Sem Fins Lucrativos</option>
+                            <option value="bronze">Associação Bronze</option>
+                            <option value="silver">Associação Prata</option>
+                            <option value="gold">Associação Ouro</option>
+                        </select>
+                    </label>
+
+                    <label>Descrição da atividade/organização
+                        <textarea name="descricao" title="Conte brevemente o que sua organização faz" rows="4"></textarea>
+                    </label>
+                </fieldset>
+
+                <input type="hidden" name="timestamp" id="timestamp">
+
+                <button type="submit" class="botao-enviar">Enviar pedido</button>
+            </form>
+
+            <aside class="niveis" aria-labelledby="titulo-niveis">
+                <h2 id="titulo-niveis">Níveis de associação</h2>
+                <article class="cartao-nivel nivel-np">
+                    <h3>Associação Sem Fins Lucrativos</h3>
+                    <p class="preco">Grátis</p>
+                    <p>Para organizações sem fins lucrativos.</p>
+                    <button type="button" class="link-beneficios" data-modal="modal-np">Ver benefícios</button>
+                </article>
+                <article class="cartao-nivel nivel-bronze">
+                    <h3>Associação Bronze</h3>
+                    <p class="preco">R$ 90/mês</p>
+                    <p>Para quem está começando a crescer.</p>
+                    <button type="button" class="link-beneficios" data-modal="modal-bronze">Ver benefícios</button>
+                </article>
+                <article class="cartao-nivel nivel-prata">
+                    <h3>Associação Prata</h3>
+                    <p class="preco">R$ 190/mês</p>
+                    <p>Para empresas que querem ser vistas.</p>
+                    <button type="button" class="link-beneficios" data-modal="modal-prata">Ver benefícios</button>
+                </article>
+                <article class="cartao-nivel nivel-ouro">
+                    <h3>Associação Ouro</h3>
+                    <p class="preco">R$ 390/mês</p>
+                    <p>Para quem quer liderar o mercado local.</p>
+                    <button type="button" class="link-beneficios" data-modal="modal-ouro">Ver benefícios</button>
+                </article>
+            </aside>
+
+        </div>
+
+        <dialog id="modal-np" class="modal-nivel" aria-labelledby="titulo-np">
+            <h2 id="titulo-np">Associação Sem Fins Lucrativos</h2>
+            <p class="preco">Grátis</p>
+            <ul>
+                <li>Perfil no diretório de associados</li>
+                <li>Newsletter mensal da câmara</li>
+                <li>Acesso aos eventos abertos de networking</li>
+            </ul>
+            <button type="button" class="fechar-modal">Fechar</button>
+        </dialog>
+
+        <dialog id="modal-bronze" class="modal-nivel" aria-labelledby="titulo-bronze">
+            <h2 id="titulo-bronze">Associação Bronze</h2>
+            <p class="preco">R$ 90/mês</p>
+            <ul>
+                <li>Tudo do nível Sem Fins Lucrativos</li>
+                <li>10% de desconto em eventos pagos</li>
+                <li>1 treinamento por trimestre</li>
+            </ul>
+            <button type="button" class="fechar-modal">Fechar</button>
+        </dialog>
+
+        <dialog id="modal-prata" class="modal-nivel" aria-labelledby="titulo-prata">
+            <h2 id="titulo-prata">Associação Prata</h2>
+            <p class="preco">R$ 190/mês</p>
+            <ul>
+                <li>Tudo da Associação Bronze</li>
+                <li>25% de desconto em eventos pagos</li>
+                <li>Rodízio no destaque da página inicial</li>
+                <li>Participação nas rodadas de negócios</li>
+            </ul>
+            <button type="button" class="fechar-modal">Fechar</button>
+        </dialog>
+
+        <dialog id="modal-ouro" class="modal-nivel" aria-labelledby="titulo-ouro">
+            <h2 id="titulo-ouro">Associação Ouro</h2>
+            <p class="preco">R$ 390/mês</p>
+            <ul>
+                <li>Tudo da Associação Prata</li>
+                <li>Destaque fixo na página inicial</li>
+                <li>Treinamentos ilimitados</li>
+                <li>Estande na feira anual da câmara</li>
+            </ul>
+            <button type="button" class="fechar-modal">Fechar</button>
+        </dialog>
     </main>
 
     <footer>

@@ -67,7 +67,7 @@ header {
   color: var(--azul);
 }
 
-/* Aparência comum dos botões */
+/* Botões */
 #botao-menu,
 .botao-visual,
 .botao-cta {
@@ -287,21 +287,21 @@ h1 {
   font-size: 0.78rem;
 }
 
-/* Nível 1 — Membro: só contorno */
+/* Nível 1 — Membro: */
 .selo-1 {
   background-color: var(--branco);
   border: 1px solid var(--borda);
   color: var(--texto-suave);
 }
 
-/* Nível 2 — Prata: preenchimento cinza-metal */
+/* Nível 2 — Prata */
 .selo-2 {
   background-color: var(--prata);
   border: 1px solid var(--prata);
   color: var(--texto);
 }
 
-/* Nível 3 — Ouro: preenchimento laranja */
+/* Nível 3 — Ouro */
 .selo-3 {
   background-color: var(--laranja);
   border: 1px solid var(--laranja);
@@ -341,7 +341,7 @@ h1 {
   font-size: 1.05rem;
 }
 
-/* ===== Página inicial ===== */
+/* Página inicial */
 
 .hero {
   position: relative;
@@ -534,4 +534,234 @@ footer p {
     animation: none !important;
     transition: none !important;
   }
+}
+
+/* Associe-se Formulário */
+.layout-associacao {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.form-associacao fieldset {
+  margin: 0 0 1.25rem;
+  padding: 1rem;
+  border: 1px solid var(--borda);
+  border-radius: 8px;
+  background-color: var(--branco);
+  box-shadow: var(--sombra);
+}
+
+.form-associacao legend {
+  padding: 0 0.4rem;
+  font-family: var(--titulo);
+  font-weight: 600;
+  color: var(--azul);
+}
+
+.form-associacao label {
+  display: block;
+  margin-bottom: 0.9rem;
+  font-weight: 600;
+}
+
+.form-associacao input,
+.form-associacao select,
+.form-associacao textarea {
+  display: block;
+  width: 100%;
+  margin-top: 0.3rem;
+  padding: 0.6rem 0.7rem;
+  border: 1px solid var(--texto-suave);
+  border-radius: 4px;
+  background-color: var(--branco);
+  color: var(--texto);
+  font: inherit;
+  font-weight: 400;
+}
+
+.form-associacao input:user-invalid,
+.form-associacao select:user-invalid {
+  border: 2px solid var(--laranja-texto);
+}
+
+.form-associacao textarea {
+  resize: vertical;
+}
+
+.botao-enviar {
+  width: 100%;
+  padding: 0.8rem 1.5rem;
+  border: 2px solid var(--azul);
+  border-radius: 999px;
+  background-color: var(--azul);
+  color: var(--branco);
+  font-family: var(--titulo);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.botao-enviar:hover,
+.botao-enviar:focus {
+  background-color: var(--branco);
+  color: var(--azul);
+}
+
+/* Associe-se - Cartões */
+.niveis h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.3rem;
+  color: var(--azul);
+}
+
+.cartao-nivel {
+  margin-bottom: 1rem;
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--borda);
+  border-top: 6px solid var(--azul);
+  border-radius: 8px;
+  background-color: var(--branco);
+  box-shadow: var(--sombra);
+}
+
+.cartao-nivel h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.cartao-nivel p {
+  margin: 0.2rem 0;
+}
+
+.nivel-np {
+  border-top-color: var(--azul-claro);
+}
+
+.nivel-bronze {
+  border-top-color: #b0703c;
+}
+
+.nivel-prata {
+  border-top-color: var(--prata);
+}
+
+.nivel-ouro {
+  border-top-color: var(--laranja);
+}
+
+.preco {
+  font-family: var(--titulo);
+  font-weight: 600;
+  color: var(--laranja-texto);
+}
+
+.link-beneficios {
+  margin-top: 0.4rem;
+  padding: 0.5rem 0;
+  border: none;
+  background: none;
+  color: var(--azul);
+  font: inherit;
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Associe-se - modais */
+.modal-nivel {
+  width: min(90vw, 28rem);
+  padding: 1.5rem;
+  border: none;
+  border-top: 6px solid var(--laranja);
+  border-radius: 8px;
+  color: var(--texto);
+  box-shadow: var(--sombra-flutuante);
+}
+
+.modal-nivel::backdrop {
+  background-color: var(--painel);
+}
+
+.modal-nivel h2 {
+  margin: 0;
+  color: var(--azul);
+}
+
+.modal-nivel ul {
+  padding-left: 1.2rem;
+}
+
+.fechar-modal {
+  padding: 0.5rem 1.2rem;
+  border: 2px solid var(--azul);
+  border-radius: 999px;
+  background-color: var(--azul);
+  color: var(--branco);
+  font-family: var(--titulo);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.fechar-modal:hover,
+.fechar-modal:focus {
+  background-color: var(--branco);
+  color: var(--azul);
+}
+
+/* Associe-se - Animação */
+@keyframes surgir {
+  from {
+    opacity: 0;
+    transform: translateY(1.25rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.cartao-nivel {
+  animation: surgir 0.6s ease-out both;
+}
+
+.cartao-nivel:nth-of-type(2) {
+  animation-delay: 0.1s;
+}
+
+.cartao-nivel:nth-of-type(3) {
+  animation-delay: 0.2s;
+}
+
+.cartao-nivel:nth-of-type(4) {
+  animation-delay: 0.3s;
+}
+
+/* Agradecimento - resumo do pedido */
+.resumo-pedido {
+  max-width: 36rem;
+  margin-bottom: 1.5rem;
+  border-top: 6px solid var(--laranja);
+}
+
+.resumo-pedido h2 {
+  margin-top: 0;
+  color: var(--azul);
+}
+
+.resumo-pedido dl {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.5rem 1rem;
+  margin: 0;
+}
+
+.resumo-pedido dt {
+  font-weight: 600;
+  color: var(--texto-suave);
+}
+
+.resumo-pedido dd {
+  margin: 0;
+  overflow-wrap: anywhere;
 }

@@ -4,16 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre | Câmara de Comércio de Porto Alegre</title>
-    <meta name="description" content="História, dados demográficos e galeria de imagens de Porto Alegre para quem quer conhecer a cidade.">
+    <title>Pedido recebido | Câmara de Comércio de Porto Alegre</title>
+    <meta name="description" content="Confirmação do pedido de associação à Câmara de Comércio de Porto Alegre.">
     <meta name="author" content="Claudio Englert">
     <link rel="icon" href="favicon.ico">
 
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Sobre | Câmara de Comércio de Porto Alegre">
-    <meta property="og:description" content="História, dados demográficos e galeria de imagens de Porto Alegre para quem quer conhecer a cidade.">
+    <meta property="og:title" content="Pedido recebido | Câmara de Comércio de Porto Alegre">
+    <meta property="og:description" content="Confirmação do pedido de associação à Câmara de Comércio de Porto Alegre.">
     <meta property="og:image" content="https://c-englert.github.io/wdd231/camara/imagens/og-image.png">
-    <meta property="og:url" content="https://c-englert.github.io/wdd231/camara/sobre.html">
+    <meta property="og:url" content="https://c-englert.github.io/wdd231/camara/agradecimento.html">
     <meta property="og:locale" content="pt_BR">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,6 +27,7 @@
 
     <script src="scripts/navegacao.js" defer></script>
     <script src="scripts/data.js" defer></script>
+    <script src="scripts/agradecimento.js" defer></script>
 </head>
 
 <body>
@@ -42,15 +43,32 @@
         <ul>
             <li><a href="index.html">Início</a></li>
             <li><a href="diretorio.html">Diretório</a></li>
-            <li><a href="associacao.html">Associe-se</a></li>
-            <li><a href="sobre.html" class="ativo" aria-current="page">Sobre</a></li>
+            <li><a href="associacao.html" class="ativo">Associe-se</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
         </ul>
     </nav>
 
     <main>
-        <h1>Sobre Porto Alegre</h1>
-        <p class="chamada">Esta página trará a história da cidade, dados demográficos atuais e uma galeria de imagens da região.</p>
-        <p><a href="diretorio.html">Enquanto isso, conheça as empresas associadas no diretório.</a></p>
+        <h1>Obrigado pelo pedido!</h1>
+        <p class="chamada">Recebemos seus dados. Nossa equipe entra em contato em até dois dias úteis para concluir a associação.</p>
+
+        <section class="cartao resumo-pedido" aria-labelledby="titulo-resumo">
+            <h2 id="titulo-resumo">Resumo do pedido</h2>
+            <dl>
+                <dt>Nome</dt>
+                <dd id="r-nome"></dd>
+                <dt>E-mail</dt>
+                <dd id="r-email"></dd>
+                <dt>Celular</dt>
+                <dd id="r-celular"></dd>
+                <dt>Empresa/organização</dt>
+                <dd id="r-organizacao"></dd>
+                <dt>Enviado em</dt>
+                <dd id="r-data"></dd>
+            </dl>
+        </section>
+
+        <p><a href="index.html">Voltar para o início</a> &bull; <a href="diretorio.html">Conhecer os associados</a></p>
     </main>
 
     <footer>
