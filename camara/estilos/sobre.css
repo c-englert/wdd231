@@ -154,3 +154,9 @@
     grid-template-columns: minmax(0, 240px) 1fr;
   }
 }
+
+/* Reserva espaço enquanto o JavaScript cria os cartões,
+   para o rodapé não "pular" (evita Cumulative Layout Shift) */
+.grade-lugares:empty {
+  min-height: 100vh;
+}
