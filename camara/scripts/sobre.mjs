@@ -1,4 +1,3 @@
-// Pontos de interesse de Porto Alegre
 import { lugares } from "../dados/lugares.mjs";
 
 const areaLugares = document.querySelector("#lugares");

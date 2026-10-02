@@ -1,6 +1,3 @@
-/* Sobre: cartões dos pontos de interesse */
-
-/* Telas pequenas (320px a 640px): uma coluna */
 .grade-lugares {
   display: grid;
   gap: 1rem;
@@ -16,14 +13,37 @@
     "lugar8";
 }
 
-.lugar:nth-child(1) { grid-area: lugar1; }
-.lugar:nth-child(2) { grid-area: lugar2; }
-.lugar:nth-child(3) { grid-area: lugar3; }
-.lugar:nth-child(4) { grid-area: lugar4; }
-.lugar:nth-child(5) { grid-area: lugar5; }
-.lugar:nth-child(6) { grid-area: lugar6; }
-.lugar:nth-child(7) { grid-area: lugar7; }
-.lugar:nth-child(8) { grid-area: lugar8; }
+.lugar:nth-child(1) {
+  grid-area: lugar1;
+}
+
+.lugar:nth-child(2) {
+  grid-area: lugar2;
+}
+
+.lugar:nth-child(3) {
+  grid-area: lugar3;
+}
+
+.lugar:nth-child(4) {
+  grid-area: lugar4;
+}
+
+.lugar:nth-child(5) {
+  grid-area: lugar5;
+}
+
+.lugar:nth-child(6) {
+  grid-area: lugar6;
+}
+
+.lugar:nth-child(7) {
+  grid-area: lugar7;
+}
+
+.lugar:nth-child(8) {
+  grid-area: lugar8;
+}
 
 .lugar {
   display: grid;
@@ -99,7 +119,6 @@
   color: var(--azul);
 }
 
-/* Telas médias (641px a 1024px): uma coluna, foto ao lado do texto */
 @media (min-width: 641px) {
   .grade-lugares {
     gap: 1.25rem;
@@ -121,7 +140,6 @@
   }
 }
 
-/* Telas grandes (1025px ou mais): duas colunas de cartões */
 @media (min-width: 1025px) {
   .grade-lugares {
     grid-template-columns: 1fr 1fr;

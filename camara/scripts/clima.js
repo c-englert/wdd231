@@ -1,4 +1,3 @@
-// Clima de Porto Alegre com a API do OpenWeatherMap
 const CHAVE_API = "c626208c4427536fdd45523a295887cf";
 const LAT = -30.0346;
 const LON = -51.2177;
