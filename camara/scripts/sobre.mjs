@@ -5,7 +5,7 @@ const areaLugares = document.querySelector("#lugares");
 const linkDoMapa = (lugar) =>
   `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${lugar.nome}, Porto Alegre`)}`;
 
-function criarCartao(lugar) {
+function criarCartao(lugar, indice) {
   const cartao = document.createElement("article");
   cartao.className = "lugar";
 
@@ -18,7 +18,11 @@ function criarCartao(lugar) {
   imagem.alt = lugar.alt;
   imagem.width = 300;
   imagem.height = 200;
-  imagem.loading = "lazy";
+  // A primeira foto é o maior elemento da tela (LCP): carrega já, com prioridade
+  imagem.loading = indice === 0 ? "eager" : "lazy";
+  if (indice === 0) {
+    imagem.fetchPriority = "high";
+  }
   const legenda = document.createElement("figcaption");
   legenda.textContent = `Foto: ${lugar.credito}`;
   figura.append(imagem, legenda);
