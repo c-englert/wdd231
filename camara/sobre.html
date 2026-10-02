@@ -28,6 +28,7 @@
 
     <script src="scripts/navegacao.js" defer></script>
     <script src="scripts/data.js" defer></script>
+    <script src="scripts/visita.js" defer></script>
     <script type="module" src="scripts/sobre.mjs"></script>
 </head>
 
@@ -52,6 +53,11 @@
     <main>
         <h1>Descubra Porto Alegre</h1>
         <p class="chamada">Oito lugares que mostram por que vale a pena viver, visitar e fazer negócios na capital gaúcha.</p>
+
+        <div class="mensagem-visita" role="status">
+            <p></p>
+            <button type="button" aria-label="Fechar mensagem">&times;</button>
+        </div>
 
         <section id="lugares" class="grade-lugares" aria-label="Pontos de interesse de Porto Alegre"></section>
     </main>

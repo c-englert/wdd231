@@ -160,3 +160,42 @@
 .grade-lugares:empty {
   min-height: 100vh;
 }
+
+/* Mensagem da última visita */
+.mensagem-visita {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  min-height: 3rem; /* espaço reservado: a faixa não empurra os cartões */
+  margin-bottom: 1.25rem;
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  border-left: 6px solid var(--laranja);
+  border-radius: 4px;
+  background-color: var(--laranja-fraco);
+  color: var(--texto);
+}
+
+.mensagem-visita[hidden] {
+  display: none;
+}
+
+.mensagem-visita p {
+  flex: 1;
+  margin: 0;
+}
+
+.mensagem-visita button {
+  padding: 0.25rem 0.6rem;
+  border: none;
+  border-radius: 4px;
+  background: none;
+  color: var(--laranja-texto);
+  font-size: 1.4rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.mensagem-visita button:hover,
+.mensagem-visita button:focus {
+  background-color: var(--branco);
+}

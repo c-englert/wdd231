@@ -762,3 +762,8 @@ footer p {
   margin: 0;
   overflow-wrap: anywhere;
 }
+
+/* Reserva espaço enquanto o JavaScript cria os cartões (evita CLS) */
+.membros:empty {
+  min-height: 100vh;
+}
