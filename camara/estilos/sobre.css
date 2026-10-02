@@ -1,0 +1,138 @@
+/* Sobre: cartões dos pontos de interesse */
+
+/* Telas pequenas (320px a 640px): uma coluna */
+.grade-lugares {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  grid-template-areas:
+    "lugar1"
+    "lugar2"
+    "lugar3"
+    "lugar4"
+    "lugar5"
+    "lugar6"
+    "lugar7"
+    "lugar8";
+}
+
+.lugar:nth-child(1) { grid-area: lugar1; }
+.lugar:nth-child(2) { grid-area: lugar2; }
+.lugar:nth-child(3) { grid-area: lugar3; }
+.lugar:nth-child(4) { grid-area: lugar4; }
+.lugar:nth-child(5) { grid-area: lugar5; }
+.lugar:nth-child(6) { grid-area: lugar6; }
+.lugar:nth-child(7) { grid-area: lugar7; }
+.lugar:nth-child(8) { grid-area: lugar8; }
+
+.lugar {
+  display: grid;
+  grid-template-areas:
+    "titulo"
+    "foto"
+    "descricao"
+    "endereco"
+    "botao";
+  gap: 0.6rem;
+  padding: 1rem;
+  background-color: var(--branco);
+  border: 1px solid var(--borda);
+  border-top: 4px solid var(--laranja);
+  border-radius: 8px;
+  box-shadow: var(--sombra);
+}
+
+.lugar h2 {
+  grid-area: titulo;
+  margin: 0;
+  font-size: 1.2rem;
+  color: var(--azul);
+}
+
+.lugar figure {
+  grid-area: foto;
+  margin: 0;
+}
+
+.lugar img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border-radius: 4px;
+  background-color: var(--azul-fraco);
+}
+
+.lugar figcaption {
+  margin-top: 0.2rem;
+  font-size: 0.75rem;
+  color: var(--texto-suave);
+}
+
+.lugar p {
+  grid-area: descricao;
+  margin: 0;
+}
+
+.lugar address {
+  grid-area: endereco;
+  font-size: 0.9rem;
+  color: var(--texto-suave);
+}
+
+.saiba-mais {
+  grid-area: botao;
+  padding: 0.6rem 1.2rem;
+  border: 2px solid var(--azul);
+  border-radius: 999px;
+  background-color: var(--azul);
+  color: var(--branco);
+  font-family: var(--titulo);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.saiba-mais:hover,
+.saiba-mais:focus {
+  background-color: var(--branco);
+  color: var(--azul);
+}
+
+/* Telas médias (641px a 1024px): uma coluna, foto ao lado do texto */
+@media (min-width: 641px) {
+  .grade-lugares {
+    gap: 1.25rem;
+  }
+
+  .lugar {
+    grid-template-columns: minmax(0, 300px) 1fr;
+    grid-template-areas:
+      "titulo titulo"
+      "foto descricao"
+      "foto endereco"
+      "botao botao";
+    align-items: start;
+    column-gap: 1.25rem;
+  }
+
+  .lugar address {
+    align-self: end;
+  }
+}
+
+/* Telas grandes (1025px ou mais): duas colunas de cartões */
+@media (min-width: 1025px) {
+  .grade-lugares {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "lugar1 lugar2"
+      "lugar3 lugar4"
+      "lugar5 lugar6"
+      "lugar7 lugar8";
+  }
+
+  .lugar {
+    grid-template-columns: minmax(0, 240px) 1fr;
+  }
+}
