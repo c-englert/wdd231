@@ -199,3 +199,18 @@
 .mensagem-visita button:focus {
   background-color: var(--branco);
 }
+
+/* Efeito ao passar o mouse nas fotos: só em telas médias e grandes
+   com mouse (não aparece na visualização móvel) */
+@media (min-width: 641px) and (hover: hover) {
+  .lugar img {
+    filter: saturate(0.85);
+    transition: transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .lugar img:hover {
+    transform: scale(1.04);
+    filter: saturate(1.2) brightness(1.05);
+    box-shadow: var(--sombra-flutuante);
+  }
+}
