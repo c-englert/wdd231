@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Compare lugares famosos do mundo com paisagens, monumentos e tradições do Alegrete.">
+  <meta name="author" content="Claudio Englert">
+  <title>Comparações | O Mundo ao Redor do Alegrete</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rye&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos/base.css"><link rel="stylesheet" href="estilos/maior.css">
+</head>
+<body data-pagina="comparacoes">
+  <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+  <header class="cabecalho"><div class="cabecalho-interno"><a class="marca" href="index.html" aria-label="O Mundo ao Redor do Alegrete — início"><span class="marca-selo" aria-hidden="true">◉</span><span>O Mundo ao Redor<br>do Alegrete</span></a><button class="botao-menu" type="button" aria-expanded="false" aria-controls="menu-principal"><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span><span class="texto-visivel">Menu</span></button><nav id="menu-principal" class="menu-principal" aria-label="Navegação principal"><a href="index.html">Início</a><a class="ativo" href="comparacoes.html" aria-current="page">Comparações</a><a href="envie.html">Envie a sua</a></nav></div></header>
+  <main id="conteudo">
+    <section class="topo-pagina"><div class="conteudo-largo"><p class="sobretitulo">Passaporte carimbado</p><h1>Comparações que só um alegretense entende</h1><p>Do grandioso ao pitoresco, cada lugar do mundo encontra um parente ilustre — ou bem parecido — no Alegrete.</p></div></section>
+    <section class="conteudo-largo secao-listagem" aria-labelledby="titulo-listagem"><div class="cabecalho-listagem"><div><h2 id="titulo-listagem">Escolha seu destino</h2><p>Clique em uma comparação para conhecer a história por trás dela.</p></div><div class="filtros" role="group" aria-label="Filtrar comparações por categoria"><button class="filtro ativo" type="button" data-filtro="todos" aria-pressed="true">Todas</button><button class="filtro" type="button" data-filtro="natureza" aria-pressed="false">Natureza</button><button class="filtro" type="button" data-filtro="monumento" aria-pressed="false">Monumentos</button><button class="filtro" type="button" data-filtro="arquitetura" aria-pressed="false">Arquitetura</button><button class="filtro" type="button" data-filtro="cultura" aria-pressed="false">Cultura</button></div></div><div id="lista-comparacoes" class="grade-comparacoes" aria-live="polite"><p class="carregando">Carregando comparações…</p></div></section>
+  </main>
+  <footer class="rodape"><div class="conteudo-largo rodape-conteudo"><div><a class="marca marca-rodape" href="index.html"><span class="marca-selo" aria-hidden="true">◉</span><span>O Mundo ao Redor<br>do Alegrete</span></a><p>Um projeto acadêmico sobre o orgulho de ser alegretense.</p></div><div><p class="rodape-titulo">Explore</p><a href="comparacoes.html">Comparações</a><a href="envie.html">Envie a sua</a><a href="atribuicoes.html">Atribuições</a></div><p class="copyright">© <span data-ano>2026</span> Claudio Englert<br>WDD 231</p></div></footer>
+  <dialog id="dialog-comparacao" class="modal-comparacao" aria-labelledby="modal-titulo"><button class="fechar-modal" type="button" aria-label="Fechar detalhes">×</button><div class="conteudo-modal"></div></dialog>
+  <script type="module" src="scripts/main.js"></script>
+</body>
+</html>

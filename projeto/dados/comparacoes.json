@@ -1,0 +1,227 @@
+[
+  {
+    "id": 1,
+    "categoria": "natureza",
+    "mundo": {
+      "nome": "Horseshoe Bend",
+      "local": "Page, Arizona",
+      "pais": "Estados Unidos",
+      "imagem": "imagens/mundo/horseshoe-bend-classico.jpg"
+    },
+    "alegrete": {
+      "nome": "Curva do Ibirapuitã",
+      "imagem": "imagens/rio-alegrete.webp"
+    },
+    "descricao": "Lá no Arizona, o rio Colorado faz uma curva famosa entre paredões de pedra. Por aqui, o Ibirapuitã também desenha curvas que convidam a diminuir o passo e ficar olhando a água passar e ainda com a vantagem de ser arborizado."
+  },
+  {
+    "id": 2,
+    "categoria": "natureza",
+    "mundo": {
+      "nome": "Tonto Natural Bridge",
+      "local": "Payson, Arizona",
+      "pais": "Estados Unidos",
+      "imagem": "imagens/mundo/tonto-natural-bridge.jpg"
+    },
+    "alegrete": {
+      "nome": "Ponte de Pedra do Cerro do Tigre",
+      "imagem": "imagens/ponte-pedra-cerro-do-tigre.jpg"
+    },
+    "descricao": "No Arizona, a Tonto Natural Bridge forma um arco de pedra sobre o vale. No Alegrete, a Ponte de Pedra do Cerro do Tigre também desenhava uma passagem esculpida pela natureza: dois arcos, duas paisagens e a mesma vontade de parar para admirar."
+  },
+  {
+    "id": 3,
+    "categoria": "monumento",
+    "mundo": {
+      "nome": "Arco do Triunfo",
+      "local": "Paris",
+      "pais": "França",
+      "imagem": "imagens/mundo/arco-do-triunfo.jpg"
+    },
+    "alegrete": {
+      "nome": "Portal do Alegrete",
+      "imagem": "imagens/arco-alegrete.webp"
+    },
+    "descricao": "Paris recebe quem chega com um arco monumental. O Alegrete também sabe fazer entrada marcante: seu portal anuncia que a viagem ganhou jeito de campanha."
+  },
+  {
+    "id": 4,
+    "categoria": "monumento",
+    "mundo": {
+      "nome": "Monumento a Washington",
+      "local": "Washington, D.C.",
+      "pais": "Estados Unidos",
+      "imagem": "imagens/mundo/monumento-washington.jpg"
+    },
+    "alegrete": {
+      "nome": "Obelisco do Alegrete",
+      "imagem": "imagens/obelisco-alegrete.webp"
+    },
+    "descricao": "Washington tem seu marco branco, alto e inconfundível. No Alegrete, o obelisco local entra na conversa sem cerimônia: monumento bom é aquele que vira ponto de encontro e memória."
+  },
+  {
+    "id": 5,
+    "categoria": "arquitetura",
+    "mundo": {
+      "nome": "Golden Gate Bridge",
+      "local": "São Francisco, Califórnia",
+      "pais": "Estados Unidos",
+      "imagem": "imagens/mundo/golden-gate-bridge.jpg"
+    },
+    "alegrete": {
+      "nome": "Ponte de ferro",
+      "imagem": "imagens/ponte-alegrete.webp"
+    },
+    "descricao": "Na Califórnia, a Golden Gate atravessa a baía com suas torres vermelhas e cabos inconfundíveis. A ponte de ferro alegretense, guardando suas proporções, também une paisagem, engenharia e lembranças de viagem."
+  },
+  {
+    "id": 6,
+    "categoria": "cultura",
+    "mundo": {
+      "nome": "Cavaleiros de Rohan",
+      "local": "Terra-média (ficção)",
+      "pais": "O Senhor dos Anéis",
+      "imagem": "imagens/cavaleiros-de-rohan.webp"
+    },
+    "alegrete": {
+      "nome": "Cavalgada alegretense",
+      "imagem": "imagens/cavalgada-alegrete.webp"
+    },
+    "descricao": "Na ficção, Rohan atravessa campos a cavalo. No Alegrete, a cavalgada é realidade, tradição e encontro. Só falta escolher uma trilha sonora épica para completar a cena."
+  },
+  {
+    "id": 7,
+    "categoria": "arquitetura",
+    "mundo": {
+      "nome": "Casa Branca",
+      "local": "Washington, D.C.",
+      "pais": "Estados Unidos",
+      "imagem": "imagens/mundo/casa-branca.jpg"
+    },
+    "alegrete": {
+      "nome": "Prédio histórico",
+      "imagem": "imagens/predio-alegrete.webp"
+    },
+    "descricao": "Colunas, fachada clara e um ar solene fazem a Casa Branca ser reconhecida no mundo inteiro. O prédio histórico alegretense mostra que elegância de fachada também mora por aqui."
+  },
+  {
+    "id": 8,
+    "categoria": "monumento",
+    "mundo": {
+      "nome": "Estátua da Liberdade",
+      "local": "Nova York",
+      "pais": "Estados Unidos",
+      "imagem": "imagens/mundo/estatua-da-liberdade.jpg"
+    },
+    "alegrete": {
+      "nome": "Estátua do gaúcho",
+      "imagem": "imagens/gaucho-alegrete.webp"
+    },
+    "descricao": "Nova York tem uma dama com tocha na mão. O Alegrete tem um gaúcho que representa a lida, a tradição e o jeito campeiro. Cada cidade recebe seus visitantes à sua maneira."
+  },
+  {
+    "id": 9,
+    "categoria": "natureza",
+    "mundo": {
+      "nome": "Dunas de Cadiz",
+      "local": "Deserto de Mojave, Califórnia",
+      "pais": "Estados Unidos",
+      "imagem": "imagens/mundo/cadiz-dunes-mojave.jpg"
+    },
+    "alegrete": {
+      "nome": "Deserto de São João",
+      "imagem": "imagens/deserto-sao-joao.jpg"
+    },
+    "descricao": "No Mojave, as dunas de Cadiz parecem um mar de areia no sul da Califórnia. Em Alegrete, o chamado Deserto de São João é um areal moldado pela erosão e pelo vento: não é um deserto climático, mas também transforma o pampa num cenário improvável."
+  },
+  {
+    "id": 10,
+    "categoria": "monumento",
+    "mundo": {
+      "nome": "Fontes do Bellagio",
+      "local": "Las Vegas, Nevada",
+      "pais": "Estados Unidos",
+      "imagem": "imagens/mundo/chafariz-bellagio.jpg"
+    },
+    "alegrete": {
+      "nome": "Chafariz do Parque Neytha Ramos",
+      "imagem": "imagens/chafariz-parque-neytha-ramos.jpg"
+    },
+    "descricao": "Em Las Vegas, as Fontes do Bellagio transformam água, luz e música em espetáculo. No Parque Neytha Ramos, o chafariz da lagoa cria sua própria coreografia de jatos: menor na escala, mas igualmente feito para dar vida ao encontro entre água, parque e cidade."
+  },
+  {
+    "id": 11,
+    "categoria": "arquitetura",
+    "mundo": {
+      "nome": "Sagrada Família",
+      "local": "Barcelona",
+      "pais": "Espanha",
+      "imagem": "imagens/mundo/sagrada-familia.jpg"
+    },
+    "alegrete": {
+      "nome": "Igreja Matriz São João Batista",
+      "imagem": "imagens/igreja-matriz-alegrete.jpg"
+    },
+    "descricao": "Em Barcelona, a Sagrada Família desenha torres e esculturas inconfundíveis no céu da cidade. No Alegrete, a Igreja Matriz São João Batista também se reconhece de longe pelas duas torres que fazem do centro um ponto de encontro e referência."
+  },
+  {
+    "id": 12,
+    "categoria": "monumento",
+    "mundo": {
+      "nome": "Os Candangos",
+      "local": "Praça dos Três Poderes, Brasília",
+      "pais": "Brasil",
+      "imagem": "imagens/mundo/os-candangos.jpg"
+    },
+    "alegrete": {
+      "nome": "Estátua do índio e do gaúcho",
+      "imagem": "imagens/monumento-uniao-gaucha-indigena.jpg"
+    },
+    "descricao": "Em Brasília, Os Candangos, de Bruno Giorgi, homenageiam os trabalhadores que construíram a nova capital. Em Alegrete, o índio e o gaúcho se unem sob a mesma bandeira: dois monumentos que dão forma à história e à identidade de seus lugares."
+  },
+  {
+    "id": 13,
+    "categoria": "cultura",
+    "mundo": {
+      "nome": "Estátua de Carlos Drummond de Andrade",
+      "local": "Copacabana, Rio de Janeiro",
+      "pais": "Brasil",
+      "imagem": "imagens/mundo/estatua-carlos-drummond.jpg"
+    },
+    "alegrete": {
+      "nome": "Estátua de Mário Quintana",
+      "imagem": "imagens/estatua-mario-quintana.jpg"
+    },
+    "descricao": "Em Copacabana, Carlos Drummond de Andrade se senta de frente para o mar, livro à mão e pronto para uma conversa. Em Alegrete, Mário Quintana ocupa seu banco na Praça Getúlio Vargas: dois poetas em bronze que fazem da cidade uma companhia para quem passa."
+  },
+  {
+    "id": 14,
+    "categoria": "monumento",
+    "mundo": {
+      "nome": "Fonte de Flore",
+      "local": "Jardins de Versalhes",
+      "pais": "França",
+      "imagem": "imagens/mundo/chafariz-versalhes.jpg"
+    },
+    "alegrete": {
+      "nome": "Chafariz da Praça Getúlio Vargas",
+      "imagem": "imagens/chafariz-praca-alegrete.jpg"
+    },
+    "descricao": "Nos jardins de Versalhes, a Fonte de Flore transforma água, escultura e paisagismo em espetáculo. Na Praça Getúlio Vargas, o chafariz alegretense também é um marco de encontro e memória no coração da cidade."
+  },
+  {
+    "id": 15,
+    "categoria": "arquitetura",
+    "mundo": {
+      "nome": "Torre de Londres",
+      "local": "Londres",
+      "pais": "Reino Unido",
+      "imagem": "imagens/mundo/torre-de-londres.jpg"
+    },
+    "alegrete": {
+      "nome": "12º Batalhão de Engenharia de Combate Blindado",
+      "imagem": "imagens/12-be-cmb-bld-castelinho.jpg"
+    },
+    "descricao": "Em Londres, a Torre Branca é o coração de uma fortaleza que atravessou séculos de história militar. Em Alegrete, o 12º Batalhão de Engenharia de Combate Blindado é uma referência da engenharia militar e da presença do Exército na cidade."
+  }
+]
