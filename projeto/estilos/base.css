@@ -15,3 +15,4 @@ h1,h2,h3,p{margin-top:0}h1,h2,h3{font-family:var(--fonte-titulo);font-weight:400
 .imagens-comparacao{min-height:0;aspect-ratio:1.35}.imagens-comparacao img,.imagens-comparacao .imagem-rascunho{height:100%;min-height:0}.imagem-rascunho{min-height:0}
 .imagens-comparacao img[src$="estatua-mario-quintana.webp"],.modal-imagens img[src$="estatua-mario-quintana.webp"]{object-position:left center}
 .subtitulo-creditos{margin-top:2.2rem;color:var(--verde)}.creditos-imagens{margin:0;padding:1.2rem 1.2rem 1.2rem 2.2rem;background:var(--branco);border-left:4px solid var(--amarelo);box-shadow:0 3px 10px rgb(40 42 30 / 7%)}.creditos-imagens li+li{margin-top:.55rem}.creditos-imagens a{color:var(--vermelho);font-weight:700}
+.cabecalho{position:sticky;top:0}
