@@ -39,7 +39,7 @@
       "imagem": "imagens/mundo/arco-do-triunfo.webp"
     },
     "alegrete": {
-      "nome": "Portal do Alegrete",
+      "nome": "Monumento ao Expedicionário",
       "imagem": "imagens/arco-alegrete.webp"
     },
     "descricao": "Paris recebe quem chega com um arco monumental. O Alegrete também sabe fazer entrada marcante: seu portal anuncia que a viagem ganhou jeito de campanha."
@@ -159,10 +159,10 @@
       "imagem": "imagens/mundo/sagrada-familia.webp"
     },
     "alegrete": {
-      "nome": "Igreja Matriz São João Batista",
+      "nome": "Igreja Matriz Nossa Senhora da Conceição",
       "imagem": "imagens/igreja-matriz-alegrete.webp"
     },
-    "descricao": "Em Barcelona, a Sagrada Família desenha torres e esculturas inconfundíveis no céu da cidade. No Alegrete, a Igreja Matriz São João Batista também se reconhece de longe pelas duas torres que fazem do centro um ponto de encontro e referência."
+    "descricao": "Em Barcelona, a Sagrada Família desenha torres e esculturas inconfundíveis no céu da cidade. No Alegrete, a Igreja Matriz também se reconhece de longe pelas duas torres que fazem do centro um ponto de encontro e referência."
   },
   {
     "id": 12,
